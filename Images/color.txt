@@ -1,0 +1,2 @@
+main color (section) : #324651
+second color (logo)  : #ffe500

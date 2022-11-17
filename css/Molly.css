@@ -1,0 +1,152 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --section-color: #324651;
+    --main-color: #ffe500;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
+a {
+    text-decoration: none;
+    color: var(--section-color);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+
+
+/* Start Header */
+.header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.header ul li{
+    text-transform: uppercase;
+}
+/* .header ul li a{} */
+.header ul img{
+    width: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/* End Header */
+
+/* Start Landing */
+.landing{
+    background-color: var(--section-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 550px;
+}
+.landing .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+.landing .container h6{
+    margin-bottom: 0;
+    margin-top: 150px;
+    color: white;
+    font-size: 12px;
+    font-weight: 200;
+}
+.landing .container h6 span{
+    color: var(--main-color);
+}
+.landing .container h1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 80px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+}
+.landing .container p{
+    margin-top: 0;
+    color: white;
+    width: 700px;
+    font-weight: 300;
+    text-align: center;
+}
+.landing .container a {
+    margin-top: 5px;
+    font-size: 15px;
+    color: var(--main-color);
+    background-color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 50px;
+
+}
+.landing .container .circls{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.landing .container .circls span{
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    border-radius: 50%;
+}
+.landing .container .circls span:first-of-type{
+    background-color: var(--main-color);
+}
+/* End Landing */
