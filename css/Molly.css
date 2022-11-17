@@ -56,6 +56,48 @@ ul {
     width: 1170px;
   }
 }
+.title {
+  position: relative;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-size: 45px;
+  width: fit-content;
+}
+.title::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 2px;
+  background-color: var(--main-color);
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.title::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 2px solid var(--main-color);
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
 
 /* End Global Rules */
 
@@ -172,5 +214,65 @@ ul {
 }
 .landing .container .circls span:first-of-type {
   background-color: var(--main-color);
+}
+/* End Landing */
+
+/* Start Services */
+.services {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.services .container {
+  margin-top: 100px;
+}
+.services .container .p-text {
+  margin: 0 auto;
+  width: 700px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.7;
+}
+@media (max-width: 1024px) {
+  .services .container .p-text {
+    width: fit-content;
+    line-height: 1.7;
+  }
+}
+.services .container .boxs {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+@media (max-width: 320px) {
+  .services .container .boxs {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.services .container .boxs .box-srv {
+  text-align: center;
+}
+.services .container .boxs .box-srv i {
+  color: white;
+  background-color: var(--main-color);
+  padding: 22px 25px;
+  font-size: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.services .container .boxs .box-srv h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 25px auto;
+}
+.services .container .boxs .box-srv p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #333;
 }
 /* End Landing */
