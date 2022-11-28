@@ -305,7 +305,7 @@ ul {
 .responsive .box-cont img {
   position: relative;
   width: 350px;
-  margin-bottom: -200px;
+  margin-bottom: -100px;
   z-index: 10;
 }
 
