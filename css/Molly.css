@@ -220,7 +220,7 @@ ul {
 /* Start Services */
 .services {
   margin-top: 50px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .services .container {
   margin-top: 100px;
@@ -275,4 +275,118 @@ ul {
   line-height: 1.7;
   color: #333;
 }
-/* End Landing */
+.responsive {
+  background-color: #1f2021;
+  background-image: url("../Images/We\ Make\,Background.png");
+  background-size: cover;
+  position: relative;
+  padding-top: 50px;
+}
+.responsive .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50, 70, 81, 0.8);
+}
+.responsive .box-cont {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+@media (max-width: 425px) {
+  .responsive .box-cont {
+    flex-direction: column;
+  }
+}
+.responsive .box-cont img {
+  position: relative;
+  width: 350px;
+  margin-bottom: -200px;
+  z-index: 10;
+}
+
+@media (max-width: 1024px) {
+  .responsive .box-cont img {
+    margin-bottom: -80px;
+    width: 300px;
+  }
+}
+@media (max-width: 425px) {
+  .responsive .box-cont img {
+    display: none;
+  }
+}
+.responsive .box-cont .box-text {
+  position: relative;
+  flex-basis: 40%;
+}
+.responsive .box-cont .box-text h1 {
+  color: #ffe600;
+  margin-top: -50px;
+}
+.responsive .box-cont .box-text p {
+  color: white;
+  line-height: 1.7;
+}
+.responsive .box-cont .box-text ul {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.responsive .box-cont .box-text ul li {
+  padding-top: 12px;
+  color: white;
+}
+.responsive .box-cont .box-text ul li::before {
+  content: "\f055";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 800;
+  margin-right: 10px;
+  color: white;
+}
+@media (max-width: 768px) {
+  .responsive .box-cont .box-text h1 {
+    font-size: 18px;
+  }
+  .responsive .box-cont .box-text p {
+    font-size: 12px;
+  }
+  .responsive .box-cont .box-text ul li {
+    font-size: 12px;
+  }
+}
+@media (max-width: 425px) {
+  .responsive .box-cont .box-text h1 {
+    text-align: center;
+  }
+  .responsive .box-cont .box-text p {
+    text-align: center;
+  }
+  .responsive .box-cont .box-text ul {
+    margin: 0 auto;
+    width: fit-content;
+  }
+}
+.responsive .button {
+  position: relative;
+  background-color: var(--main-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.responsive .button a {
+  color: var(--main-color);
+  background-color: white;
+  padding: 8px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+/* End Services */
