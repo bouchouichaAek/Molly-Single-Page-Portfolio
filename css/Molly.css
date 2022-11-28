@@ -390,3 +390,63 @@ ul {
   -o-border-radius: 15px;
 }
 /* End Services */
+
+/* Start Portfolio */
+.portfolio {
+  margin-top: 50px;
+}
+.portfolio .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio .port-text {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center; /* #637988 */
+  line-height: 1.6;
+}
+.portfolio .category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+@media (max-width: 425px) {
+  .portfolio .category {
+    flex-direction: column;
+  }
+}
+.portfolio .category li {
+  font-size: 11px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.portfolio .category li:first-of-type {
+  background-color: var(--main-color);
+  color: white;
+}
+.portfolio .category li:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+.portfolio .box-portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.portfolio .box-portfolio img {
+  width: 300px;
+}
+
+/* End Portfolio */
