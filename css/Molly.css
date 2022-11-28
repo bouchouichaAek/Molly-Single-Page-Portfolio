@@ -470,5 +470,20 @@ ul {
   width: 300px;
   margin: 0 auto;
 }
+.portfolio .show-more {
+  margin: 20px auto;
+  color: white;
+  background-color: var(--main-color);
+  padding: 8px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  text-transform: uppercase;
+  width: fit-content;
+}
 
 /* End Portfolio */
