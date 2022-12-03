@@ -63,6 +63,7 @@ ul {
   margin: 0 auto;
   font-size: 45px;
   width: fit-content;
+  margin-bottom: 50px;
 }
 .title::before {
   position: absolute;
@@ -418,7 +419,6 @@ ul {
   justify-content: center;
 }
 .portfolio .port-text {
-  margin-top: 50px;
   margin-bottom: 50px;
   text-align: center; /* #637988 */
   line-height: 1.6;
@@ -589,3 +589,56 @@ ul {
   }
 }
 /* End Bussines */
+
+/* Start About Us */
+.about-us {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.about-us .container {
+}
+.about-us .container > p {
+  text-align: center;
+  line-height: 1.7;
+}
+.about-us .about-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .about-us .about-box {
+    flex-direction: column;
+  }
+  .about-us .container {
+    text-align: center;
+  }
+}
+.about-us .about-box img {
+  width: 300px;
+}
+.about-us .about-box .about-text h1 {
+  color: var(--main-color);
+  font-size: 25px;
+}
+.about-us .about-box .about-text h3 {
+  font-size: 20px;
+  font-style: italic;
+}
+.about-us .about-box .about-text p {
+  line-height: 1.5;
+}
+.about-us .about-box .about-text .socia-media {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+@media (max-width: 768px) {
+  .about-us .about-box .about-text .socia-media {
+    justify-content: center;
+    margin-left: 0px;
+  }
+}
+/* End About Us */
