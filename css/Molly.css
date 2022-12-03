@@ -30,8 +30,8 @@ ul {
 }
 
 .container {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -642,3 +642,63 @@ ul {
   }
 }
 /* End About Us */
+
+/* Start Skills */
+.skills-company {
+  background-color: var(--section-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.skills-company .container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .skills-company .container {
+    flex-direction: column;
+  }
+}
+.skills-company .box-sc {
+  flex-basis: 50%;
+}
+.skills-company .box-sc h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+
+.skills-company .skills .skill p {
+  text-transform: uppercase;
+  color: white;
+}
+.skills-company .skills .skill .prog {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+}
+.skills-company .skills .skill .prog::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 90%;
+  background-color: var(--main-color);
+}
+.skills-company .about-company p {
+  color: white;
+  line-height: 1.3;
+  font-size: 15px;
+}
+/* End Skills */
