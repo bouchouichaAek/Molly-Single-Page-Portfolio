@@ -500,11 +500,23 @@ ul {
   align-items: center;
   gap: 20px;
 }
+@media (max-width: 1024px) {
+  .video .container {
+    flex-direction: column;
+  }
+  .video .video-text {
+    text-align: center;
+  }
+}
 .video img {
   width: 500px;
 }
-.video .video-text {
+@media (max-width: 425px) {
+  .video img {
+    width: 250px;
+  }
 }
+
 .video .video-text h1 {
   font-size: 20px;
   margin-bottom: 5px;
