@@ -220,10 +220,10 @@ ul {
 /* Start Services */
 .services {
   margin-top: 50px;
-  /* margin-bottom: 50px; */
 }
 .services .container {
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 .services .container .p-text {
   margin: 0 auto;
@@ -487,3 +487,48 @@ ul {
 }
 
 /* End Portfolio */
+
+/* Start video */
+.video {
+  background-color: var(--main-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.video .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.video img {
+  width: 500px;
+}
+.video .video-text {
+}
+.video .video-text h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.video .video-text q {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.video .video-text p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: white;
+}
+.video .video-text a {
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: white;
+  padding: 10px 15px;
+  color: black;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-top: 20px;
+}
+/* End video */
