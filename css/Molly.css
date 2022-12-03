@@ -544,3 +544,48 @@ ul {
   margin-top: 20px;
 }
 /* End video */
+
+/* Start Bussines */
+.bussines {
+  background-color: var(--section-color);
+  margin-top: -5px;
+  padding-top: 50px;
+  overflow: hidden;
+}
+.bussines .container {
+}
+.bussines .buss-text {
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.bussines .buss-text h1 {
+  font-size: 25px;
+}
+.bussines .buss-text p {
+  font-size: 14px;
+  font-style: italic;
+  font-family: "open Sans";
+  margin-bottom: 30px;
+}
+.bussines .buss-text a {
+  font-size: 12px;
+  background-color: white;
+  color: var(--main-color);
+  padding: 10px 15px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.bussines img {
+  width: 100%;
+  margin-bottom: -50px;
+}
+@media (max-width: 425px) {
+  .bussines img {
+    display: none;
+  }
+}
+/* End Bussines */
