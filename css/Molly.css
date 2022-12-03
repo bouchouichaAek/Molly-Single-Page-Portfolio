@@ -773,4 +773,17 @@ ul {
 .blog .container .blog-boxs .box:nth-child(5) {
   grid-area: fifth;
 }
+.blog .container > a {
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 30px;
+  margin: 50px auto 0;
+  display: block;
+  width: fit-content;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
 /* End Blog */
