@@ -552,8 +552,7 @@ ul {
   padding-top: 50px;
   overflow: hidden;
 }
-.bussines .container {
-}
+
 .bussines .buss-text {
   color: white;
   text-align: center;
@@ -595,8 +594,7 @@ ul {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.about-us .container {
-}
+
 .about-us .container > p {
   text-align: center;
   line-height: 1.7;
@@ -702,3 +700,77 @@ ul {
   font-size: 15px;
 }
 /* End Skills */
+
+/* Start Blog */
+.blog {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.blog .container {
+}
+.blog .container > p {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.blog .container .blog-boxs {
+  display: grid;
+  grid-template-areas:
+    "first first first second second second"
+    "third third fourth fourth fifth fifth";
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .blog .container .blog-boxs {
+    grid-template-areas: "first" "second" "third" "fourth" "fifth";
+  }
+}
+.blog .container .blog-boxs .box .box-text {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #d1d1d1;
+}
+.blog .container .blog-boxs .box img {
+  width: 100%;
+}
+.blog .container .blog-boxs .box .box-text .blog-title {
+  font-size: 20px;
+  color: var(--main-color);
+  margin-top: 0;
+}
+.blog .container .blog-boxs .box .box-text .blog-date {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.blog .container .blog-boxs .box .box-text .blog-date .author {
+  color: var(--main-color);
+}
+.blog .container .blog-boxs .box .box-text .blog-content {
+  color: #777;
+  line-height: 1.5;
+}
+.blog .container .blog-boxs .box .box-text a {
+  color: var(--main-color);
+  margin-left: auto;
+  width: fit-content;
+}
+.blog .container .blog-boxs .box:nth-child(1) {
+  grid-area: first;
+}
+.blog .container .blog-boxs .box:nth-child(2) {
+  grid-area: second;
+}
+
+.blog .container .blog-boxs .box:nth-child(3) {
+  grid-area: third;
+}
+.blog .container .blog-boxs .box:nth-child(4) {
+  grid-area: fourth;
+}
+.blog .container .blog-boxs .box:nth-child(5) {
+  grid-area: fifth;
+}
+/* End Blog */
