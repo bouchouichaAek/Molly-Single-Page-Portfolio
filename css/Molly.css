@@ -808,6 +808,11 @@ ul {
   align-items: center;
   gap: 20px;
 }
+@media (max-width: 425px) {
+  .subscriber form {
+    flex-direction: column;
+  }
+}
 .subscriber form input {
   outline: none;
   border: none;
@@ -824,3 +829,73 @@ ul {
 }
 
 /* End Subcriber */
+
+/* Start Contact Us */
+.contact-us {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--section-color);
+}
+.contact-us .title {
+  color: white;
+}
+.contact-us .title::after {
+  background-color: var(--section-color);
+}
+.contact-us .container .contact-p {
+  text-align: center;
+  color: white;
+  line-height: 1.5;
+}
+.contact-us .container form {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.contact-us .container form input {
+  background-color: transparent;
+  color: white;
+  flex-basis: calc(95% / 3);
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  outline: none;
+}
+.contact-us .container form input::placeholder {
+  color: white;
+}
+.contact-us .container form textarea {
+  background-color: transparent;
+  color: white;
+  flex-basis: 100%;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  outline: none;
+}
+.contact-us .container form textarea::placeholder {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .contact-us .container form {
+    flex-direction: column;
+  }
+  .contact-us .container form textarea,
+  .contact-us .container form input {
+    width: 100%;
+  }
+}
+/* End Contact Us */
