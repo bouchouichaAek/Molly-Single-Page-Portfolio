@@ -8,6 +8,7 @@
 :root {
   --section-color: #324651;
   --main-color: #ffe500;
+  --footer-color: #182227;
 }
 
 html {
@@ -899,3 +900,36 @@ ul {
   }
 }
 /* End Contact Us */
+
+/* Start Footer */
+.footer {
+  padding: 50px 0;
+  background-color: var(--footer-color);
+}
+.footer .container {
+  text-align: center;
+  color: white;
+}
+.footer .container p {
+  font-size: 15px;
+}
+.footer .container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer .container ul li {
+}
+.footer .container .copy-right {
+  margin-top: 20px;
+}
+.footer .container p span {
+  color: var(--main-color);
+}
+@media (max-width: 425px) {
+  .footer .container .copy-right {
+    font-size: 10px;
+  }
+}
+/* End Footer */
