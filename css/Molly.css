@@ -787,3 +787,40 @@ ul {
   -o-border-radius: 20px;
 }
 /* End Blog */
+
+/* Start Subcriber */
+
+.subscriber {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--main-color);
+}
+.subscriber .container {
+  text-align: center;
+}
+.subscriber h1 {
+  color: white;
+  font-size: 30px;
+}
+.subscriber form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.subscriber form input {
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.subscriber form input::placeholder {
+  font-style: italic;
+}
+
+/* End Subcriber */
